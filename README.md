@@ -12,3 +12,4 @@ html, css, 장고로만 만드는 토이프로젝트 no! javascript
 
 
 배포: pythonanywhere 사용
+ㅇㄹㄴㅇㄹㄴㅇㅁㄻㄴㄹㄻㄹㅇㅁㄴㄹ
