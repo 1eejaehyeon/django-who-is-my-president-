@@ -21,6 +21,7 @@
     }
 }
 
+
 </style>
 <head>
     <meta charset="UTF-8">
@@ -57,7 +58,8 @@ maximum-scale=1.0, minimum-scale=1.0">
 
                 <div class="fade-in-box"> <!-- display: inline-block; -->
                     <p class="mypresident">나에게 맞는 대통령은?</p>
-                    <p style="text-align:center; font-size:80%; line-height: 0px; font-style: italic; font-weight: 100; padding-bottom: 80px; ">2분 만에 나의 대통령 알아보기!</p>
+                    <p style="text-align:center; font-size:80%; line-height: 0px; font-style: italic; font-weight: 100; padding-bottom: 80px; ">
+                        2분 만에 나의 대통령 알아보기!</p>
                 </div>
 
                 <p style="text-align:center;font-size:100%;line-height: 0px;"><br></p>
@@ -66,16 +68,17 @@ maximum-scale=1.0, minimum-scale=1.0">
                 <div class="in-down">
                     <b class="b">
                         <div class="back">
-                            <div class="button_base b09_electric">
+                            <div class="button_base b09_electric" onclick="location.href='{% url 'polls:detail' 1 %'">
                                 <p style="text-align:center;font-size:8%;line-height: 1px;"><br></p>
-                                <a class="a" href="{% url 'polls:detail' 1 %}">클릭하세요!</a>
+                                클릭하세요!
                             </div>
                         </div>
                     </b>
                 </div>
                 <div class="fade-in-box"> <!-- display: inline-block; -->
                     <p style="text-align:center;font-size:50%;line-height: 10px;"><br></p>
-                    <img src="{% static 'polls/images/vote.png' %}" style="display: block; margin: 0 auto; width:70px; height:70px;">
+                    <img src="{% static 'polls/images/vote.png' %}"
+                         style="display: block; margin: 0 auto; width:70px; height:70px;">
                     <p style="font-style: italic; font-weight: lighter;">Nut's</p>
                 </div>
             </div>
