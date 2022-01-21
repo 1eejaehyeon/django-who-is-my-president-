@@ -132,7 +132,7 @@ maximum-scale=1.0, minimum-scale=1.0">
         <form style="margin-top: -50px; "action="{% url 'polls:vote' question.id %}" method="post">
             {% csrf_token %}
             <div class="word" style="text-align:center;"><p>{{ question.question_text|safe }}</p></div>
-            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+            {% if error_message %}<p style="color: red;"><strong>선택해주세요!!</strong></p>{% endif %}
             <div  style="padding-top: 30px">
                 {% for choice in question.choice_set.all %}
                 <label>
