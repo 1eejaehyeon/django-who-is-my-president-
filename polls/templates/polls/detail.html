@@ -127,7 +127,7 @@ maximum-scale=1.0, minimum-scale=1.0">
         <span class="top"></span>
         <span class="bottom"></span>
         <div class="bounce">
-                <img src="{% static 'polls/images/presidenthouse.png' %}" style="padding-top: 50px;"width="200">
+                <img src="{% static 'polls/images/presidenthouse.png' %}" style="padding-top: 50px;"width="110">
         </div>
         <form style="margin-top: -50px; "action="{% url 'polls:vote' question.id %}" method="post">
             {% csrf_token %}
