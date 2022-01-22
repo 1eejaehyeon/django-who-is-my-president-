@@ -52,7 +52,7 @@
 }
 
 .b09_electric:hover {
-    color: rgb(85, 141, 136);
+    color: #ece6cc;
     background-color: #000000;
     animation: b09_electric_blinkIn 0.1s step-end 0 2;
     -webkit-animation: b09_electric_blinkIn 0.1s step-end 0 2;
@@ -419,7 +419,7 @@
 }
 
 .body {
-    background-color: rgb(85, 141, 136);
+    background-color: #ece6cc;
     font-size: 130%;
     text-align: center;
 }
