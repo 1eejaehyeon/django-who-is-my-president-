@@ -438,6 +438,9 @@
 .catch{
     position: relative;
     text-align: center;
+    opacity: 0;
+    display: none;
+    transition: opacity 1s ease-in;
 }
 
 .bounce {
