@@ -33,6 +33,7 @@
   }
 
 
+
 </style>
 <head>
     <meta charset="UTF-8">
@@ -46,9 +47,9 @@
 maximum-scale=1.0, minimum-scale=1.0">
 
 <body class="body">
- <div class="loader">
-      Data analysing
- </div>
+<div class="loader">
+    Data analysing
+</div>
 <div class="catch">
     <div> <!--     position: relative; text-align: center; -->
         <span class="right"></span> <!-- animation -->
@@ -80,7 +81,8 @@ maximum-scale=1.0, minimum-scale=1.0">
             <div class="fade-in-box">
                 <p style="text-align:center;font-size:100%;line-height: 45px;"><br></p>
                 <p style="text-align:center;font-size:120%;line-height: 0%;">당신의 대통령은 안철수 입니다!!</p>
-                <p style="text-align:center;font-size:80%; font-style: oblique;" > "바르고 깨끗한 과학경제강국 <br>믿을 사람,바른 사람 안철수"</p>
+                <p style="text-align:center;font-size:80%; font-style: oblique;"> "바르고 깨끗한 과학경제강국 <br>믿을 사람,바른 사람 안철수"
+                </p>
             </div>
 
 
@@ -115,6 +117,24 @@ maximum-scale=1.0, minimum-scale=1.0">
     </div>
 </div>
 <script type="text/javascript" src="{% static 'polls/js/js.js' %}"></script>
+<script>
+const loader = document.querySelector('.loader');
+const main = document.querySelector('.catch');
+
+function init() {
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.display = 'none';
+
+    main.style.display = 'block';
+    setTimeout(() => (main.style.opacity = 1), 50);
+  }, 2000);
+}
+
+init();
+
+
+</script>
 </body>
 
 </html>
