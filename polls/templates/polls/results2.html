@@ -4,6 +4,33 @@
 <link rel="stylesheet" media="mediatype and|not|only (expressions)">
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap');
+.loader {
+  font-family: 'ZCOOL KuaiLe', cursive;
+  font-size: 40px;
+  color: palevioletred;
+  position: relative;
+  text-align: center;
+  margin-top: 25%;
+
+
+
+
+}
+
+.loader::after {
+  content: '\2026';
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: dots steps(4, end) 2s infinite;
+  width: 0px;
+}
+
+@keyframes dots {
+  to {
+    width: 1.25em;
+  }
 
 
 </style>
@@ -50,6 +77,7 @@ maximum-scale=1.0, minimum-scale=1.0">
             <div class="fade-in-box">
                 <p style="text-align:center;font-size:100%;line-height: 45px;"><br></p>
                 <p style="text-align:center;font-size:120%;line-height: 0%;">당신의 대통령은 윤석열 입니다!!</p>
+                <p style="text-align:center;font-size:80%; font-style: oblique;" > "국민이 키운 윤석열 <br>내일을 바꾸는 대통령"</p>
             </div>
 
 
@@ -58,13 +86,13 @@ maximum-scale=1.0, minimum-scale=1.0">
 
                 <div>
                     <ul>
-                        <li> 여성부 폐지 </li>
+                        <li> 기업성장중심의 일자리 창출! </li>
                         </br>
-                        <li> 군인 월급 200? </li>
+                        <li> 민간중심 개발을 통한 주택 공급</li>
                         </br>
-                        <li> 원자력 발전 </li>
+                        <li> 자강외교 </li>
                         </br>
-                        <li> 자강외교!</li>
+                        <li> 원전 재도입</li>
                         </br>
                     </ul>
                 </div>
@@ -84,5 +112,5 @@ maximum-scale=1.0, minimum-scale=1.0">
     </div>
 </div>
 </body>
-
+<script type="text/javascript" src="{% static 'polls/js/js.js' %}"></script>
 </html>
