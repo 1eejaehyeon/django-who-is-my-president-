@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|ZCOOL+KuaiLe&display=swap');
 
 @font-face {
     font-family: "jua";
-    src: url('../fonts/BMJUA.otf');
+    src: url("../fonts/BMJUA.otf");
   }
 
   .jua{
@@ -52,7 +53,7 @@
 }
 
 .b09_electric:hover {
-    color: #ece6cc;
+    color: #ffffff;
     background-color: #000000;
     animation: b09_electric_blinkIn 0.1s step-end 0 2;
     -webkit-animation: b09_electric_blinkIn 0.1s step-end 0 2;
@@ -288,8 +289,8 @@
     }
 
     .imagesmall{
-
-
+        left: 59px;
+        top:6px;
     }
 
     .mypresident{
@@ -419,9 +420,10 @@
 }
 
 .body {
-    background-color: #ece6cc;
+    background:ivory;
     font-size: 130%;
     text-align: center;
+
 }
 
 .a {
@@ -458,13 +460,6 @@
         transform: translateY(-10px);
     }
 }
-ul {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-}
-
 .next {
   width: 140px;
   height: 45px;
@@ -577,27 +572,12 @@ ul {
   border-radius: 50%;
 }
 
-
-.bounce {
-    position: relative;
-    text-align: center;
-    animation: bounce 0.5s 0s infinite alternate ease forwards;
-
-
-}
-@keyframes bounce{
-    0%{
-        transform: translateY(0);
-    }
-    100%{
-        transform: translateY(-10px);
-    }
-}
-
+.s3 { text-shadow: 6px 2px 2px gray; }
 ul {
   width: 300px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
 }
+
 
